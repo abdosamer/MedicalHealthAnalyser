@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/Subtitle_1"
+        android:textAllCaps="true"
+        android:id="@+id/device_name"
+        android:text="hc 05"
+        />
+
+    <TextView
+        style="@style/Body_1"
+        android:textAllCaps="true"
+        android:id="@+id/device_mac"
+        android:text="hg-yu-fg-85-gh-57-"
+        />
+
+
+</LinearLayout>

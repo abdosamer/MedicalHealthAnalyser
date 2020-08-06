@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_padding"
+    android:background="@color/main_background_color"
+    tools:context=".ui.SignInActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_title_anim"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="@dimen/main_padding"
+        app:lottie_rawRes="@raw/sign_in_anim"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_view"
+        style="@style/H2"
+        android:layout_marginTop="@dimen/item_to_item_padding"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottie_title_anim" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_card"
+        android:elevation="@dimen/elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_padding"
+        app:cardCornerRadius="@dimen/corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_view">
+
+        <TextView
+            android:id="@+id/email_view"
+            style="@style/Edit_Text"
+            android:text="@string/email_address" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/password_card"
+        android:elevation="@dimen/elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_padding"
+        app:cardCornerRadius="@dimen/corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_card">
+
+        <TextView
+            android:id="@+id/password_view"
+            style="@style/Edit_Text"
+            android:text="password" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/corners"
+        android:layout_marginTop="@dimen/main_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_card">
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/BUTTON"
+            android:background="#ffffff"
+            android:textAllCaps="true"
+            android:text="login" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
