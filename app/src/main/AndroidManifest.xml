@@ -17,13 +17,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.GsrActivity"
-            android:screenOrientation="landscape"
-            ></activity>
-        <activity android:name=".ui.HomeActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".ui.SignInActivity"
+        <activity
+            android:name=".ui.GsrActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.EcgSensorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.EmgSensorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.TempSensorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SignInActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

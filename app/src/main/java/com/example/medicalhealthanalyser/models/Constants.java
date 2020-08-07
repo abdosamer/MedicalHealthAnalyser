@@ -6,7 +6,8 @@ public abstract class Constants {
 
     //embedded Commands
     public static final byte[] GSR_TURN_ON = "1".getBytes();
-    public static final byte[] EMG_TURN_ON = "1".getBytes();
+    public static final byte[] EMG_TURN_ON = "2".getBytes();
+    public static final byte[] ECG_TURN_ON = "3".getBytes();
     public static final byte[] SENSOR_TURN_OFF = "0".getBytes();
     public static final byte[] VERFY_SEND_MSG = "6".getBytes();
     public static final String VERFY_RECIEVE_MSG = "OK";
